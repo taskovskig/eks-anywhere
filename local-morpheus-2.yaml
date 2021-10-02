@@ -1,7 +1,7 @@
 apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: Cluster
 metadata:
-  name: local-morpheus
+  name: local-morpheus-2
 spec:
   clusterNetwork:
     cni: cilium
@@ -15,7 +15,7 @@ spec:
     count: 1
   datacenterRef:
     kind: DockerDatacenterConfig
-    name: local-morpheus
+    name: local-morpheus-2
   externalEtcdConfiguration:
     count: 1
   kubernetesVersion: "1.21"
@@ -26,7 +26,7 @@ spec:
 apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: DockerDatacenterConfig
 metadata:
-  name: local-morpheus
+  name: local-morpheus-2
 spec: {}
 
 ---
